@@ -40,6 +40,8 @@ class Student(models.Model):
     image = models.ImageField(upload_to="student-image",verbose_name=_("Image"),help_text=_("Upload image"))
     phone =  models.CharField(max_length=900,verbose_name=_("Phone number"),help_text=_("Enter phone number"))
     one_id = models.IntegerField(null=True,blank=True)
+    def __str__(self):
+        return self.name
     @property
     def image_show(self):
         return format_html('<img src = {} width="60" height="60" style="border-radius:50%;"'.format(self.image.url))
