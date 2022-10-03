@@ -25,3 +25,34 @@ class Teacher(models.Model):
         db_table = "Teacher"
         verbose_name = _("Teacher ")
         verbose_name_plural = _("Teachers ")
+class BlokTestlar(models.Model):
+    test_kodi = models.CharField(max_length=600)
+    fan_nomi = models.CharField(max_length=700)
+    oquvchi = models.CharField(max_length=600)
+    tel = models.CharField(max_length=700)
+    fan1= models.IntegerField()
+    fan2= models.IntegerField()
+    fan3=models.IntegerField()
+    fan4= models.IntegerField()
+    fan5 = models.IntegerField()
+    sana = models.DateTimeField(auto_now_add=True)
+    def __str__(self):
+        return f"{self.fan_nomi} fanidan imtihon!"
+    class Meta:
+        verbose_name = "Blok Testlar"
+        verbose_name_plural = "Blok Testlar"
+class FanTest(models.Model):
+    test_kodi = models.CharField(max_length=600)
+    fan_nomi = models.CharField(max_length=700)
+    oquvchi = models.CharField(max_length=600)
+    tel = models.CharField(max_length=700)
+    test_soni = models.IntegerField()
+    togri_javoblar= models.IntegerField()
+    sana = models.DateTimeField(auto_now_add=True)
+    def __str__(self):
+        return f"{self.fan_nomi} fanidan imtihon!"
+    class Meta:
+        verbose_name = "Fan Testlar"
+        verbose_name_plural = "Fan Testlar"
+
+

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 22:12+0500\n"
+"POT-Creation-Date: 2022-09-30 21:27+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,19 +77,37 @@ msgstr "Введите название класса"
 msgid "Classroom "
 msgstr "Kласс"
 
-#: .\project\settings.py:120
+#: .\mocktest\models.py:7
+msgid "Date"
+msgstr "Время"
+
+#: .\mocktest\models.py:8
+#, fuzzy
+#| msgid "Teacher "
+msgid "Teacher"
+msgstr "Учитель"
+
+#: .\mocktest\models.py:9 .\teacher\models.py:5
+msgid "Subject"
+msgstr "Предмет"
+
+#: .\mocktest\models.py:10
+msgid "Results file(Excel)"
+msgstr ""
+
+#: .\project\settings.py:122
 msgid "Russian"
 msgstr "Русский"
 
-#: .\project\settings.py:121
+#: .\project\settings.py:123
 msgid "English"
 msgstr "Английский"
 
-#: .\project\settings.py:187
+#: .\project\settings.py:189
 msgid "Home"
 msgstr "Главная "
 
-#: .\project\settings.py:190 .\project\settings.py:205
+#: .\project\settings.py:192 .\project\settings.py:207
 msgid "Support"
 msgstr "Поддерживать"
 
@@ -132,10 +150,6 @@ msgstr "Студент "
 #: .\students\models.py:55
 msgid "Students "
 msgstr "Студент "
-
-#: .\teacher\models.py:5
-msgid "Subject"
-msgstr "Предмет"
 
 #: .\teacher\models.py:5
 #, fuzzy

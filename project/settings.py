@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'students.apps.StudentsConfig',
     'class.apps.ClassConfig',
     'teacher.apps.TeacherConfig',
+    'mocktest.apps.MocktestConfig',
     'import_export',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -139,7 +141,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR ,'media')
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
   "site_title": "Avitsenna Admin",
@@ -277,3 +279,4 @@ JAZZMIN_SETTINGS = {
     # Add a language dropdown into the admin
     "language_chooser": True,
 }
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

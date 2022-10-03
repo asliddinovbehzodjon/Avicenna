@@ -1,7 +1,8 @@
 from django.contrib import admin
-
+from mocktest.models import BotUsers
 # Register your models here.
 from .models import *
+admin.site.register(BotUsers)
 @admin.register(Tuitor)
 class TuitorAdmin(admin.ModelAdmin):
     list_display = ['name','phone']
