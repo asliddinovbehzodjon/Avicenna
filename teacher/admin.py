@@ -13,9 +13,9 @@ class FanTestResource(resources.ModelResource):
 @admin.register(BlokTestlar)
 class BlokTestlarAdmin(ImportExportModelAdmin):
     resource_class = BlokTestlarResource
-    list_display = ['fan_nomi','test_kodi','sana']
-    list_filter = ['sana','test_kodi','fan_nomi']
-    search_fields = ['fan_nomi','test_kodi','oquvchi']
+    list_display = ['week_code','fio']
+    search_fields = ['week_code','fio']
+    list_per_page = 10
 @admin.register(FanTest)
 class FanTestAdmin(ImportExportModelAdmin):
     resource_class = FanTestResource

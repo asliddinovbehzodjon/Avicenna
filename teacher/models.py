@@ -26,18 +26,24 @@ class Teacher(models.Model):
         verbose_name = _("Teacher ")
         verbose_name_plural = _("Teachers ")
 class BlokTestlar(models.Model):
-    test_kodi = models.CharField(max_length=600)
-    fan_nomi = models.CharField(max_length=700)
-    oquvchi = models.CharField(max_length=600)
-    tel = models.CharField(max_length=700)
+    image_file = models.CharField(max_length=15)
+    week_code = models.CharField(max_length=600)
+    fio = models.CharField(max_length=700)
+    first_block = models.CharField(max_length=600)
+    second_block = models.CharField(max_length=700)
     fan1= models.IntegerField()
     fan2= models.IntegerField()
-    fan3=models.IntegerField()
-    fan4= models.IntegerField()
-    fan5 = models.IntegerField()
-    sana = models.DateTimeField(auto_now_add=True)
+    ona_tili=models.IntegerField()
+    tarix= models.IntegerField()
+    matematika = models.IntegerField()
+    ball = models.CharField(max_length=10)
+    local_number = models.CharField(max_length=30)
+    sms_status = models.CharField(max_length=10)
+    global_number = models.CharField(max_length=15)
+    global_id = models.CharField(max_length=10)
+
     def __str__(self):
-        return f"{self.fan_nomi} fanidan imtihon!"
+        return "Test"
     class Meta:
         verbose_name = "Blok Testlar"
         verbose_name_plural = "Blok Testlar"
